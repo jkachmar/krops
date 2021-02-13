@@ -1,7 +1,6 @@
-with import ../../lib;
+{ coreutils, dash, findutils, git, jq, openssh, pass, rsync, writers, lib }:
+with lib;
 with shell;
-
-{ coreutils, dash, findutils, git, jq, openssh, pass, rsync, writers }:
 
 let
   check = { force, target }: let
